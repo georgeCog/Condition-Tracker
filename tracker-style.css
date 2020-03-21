@@ -1,0 +1,52 @@
+:root{
+  /*Background colors*/
+  --bg-color: lightgrey;
+  /*menu colors*/
+  --mu-primary : darkslategray;
+  --mu-secondary: lightslategray;
+}
+
+body{
+  background-color: var(--bg-color);
+}
+
+/*Header*/
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--mu-primary);
+}
+
+.logo{
+  flex-shrink:2;
+  margin:20px;
+}
+.logo img{
+  width:100%;
+}
+
+.drop-btn{
+  --btn-scale:100%;
+  flex-shrink:1;
+  max-width:80px;
+  margin-right:25px;
+}
+.drop-btn:hover{
+  background-color: var(--mu-secondary);
+}
+.drop-btn img{
+  flex-shrink:1;
+  width:var(--btn-scale);
+  height:var(--btn-scale);
+}
+
+@media only screen and (max-width: 300px) {
+  /* For mobile phones: */
+  .header {
+    flex-wrap: wrap;
+  }
+  .drop-btn{
+    width:50px;
+  }
+}
