@@ -15,6 +15,7 @@
     <!--Custom css-->
     <link rel="stylesheet" href="main-style.css">
     <link rel="stylesheet" href="header-style.css">
+    <link rel="stylesheet" href="player-style.css">
     <!--Title-->
     <title>Condition Tracker</title>
   </head>
@@ -37,9 +38,22 @@
           </div>
         </div>
 
-        <div id="card-wrap">
-
+        <div id="card-wrap"></div>
+    <!--Modals-->
+    <!--Delete check modal-->
+    <button id="delete-chceck-toggle"type="button" class="hidden"  data-toggle="modal" data-target="#delete-check"></button>
+    <div class="modal" id="delete-check" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title title">Delete Player</h5>
+          </div>
+          <div class="modal-body">
+            <p>Are you sure you want to delete <span id="player-delete-name"></span> ?</p>
+          </div>
         </div>
+      </div>
+    </div>
 
     </div>
 

@@ -1,14 +1,3 @@
-/*Set color pallet*/
-:root{
-  /*Background colors*/
-  --bg-color: lightgrey;
-  /*menu colors*/
-  --mu-primary : darkslategray;
-  --mu-secondary: lightslategray;
-  --mu-light-text: gainsboro;
-  --mu-dark-text: dimgray	;
-}
-
 /*Add fonts*/
 @font-face {
   font-family: berlinSansBold;
@@ -20,12 +9,28 @@
   src: url(Resources/Fonts/BRLNSR.TTF);
 }
 
-/*Set Main background*/
+/*Set color pallet*/
+:root{
+  /*Background colors*/
+  --bg-color: lightgrey;
+  /*menu colors*/
+  --mu-primary : darkslategray;
+  --mu-secondary: lightslategray;
+  --mu-light-text: gainsboro;
+  --mu-dark-text: dimgray	;
+}
+
+/*Set global aspects*/
 body{
   background-color: var(--bg-color);
+  font-family: berlinSans;
 }
 
 /*Global classes*/
 .title{
   font-family: berlinSansBold;
+}
+
+.hidden{
+  display:none;
 }

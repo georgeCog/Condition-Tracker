@@ -1,0 +1,31 @@
+/*Style of player cards*/
+
+
+/*Card container*/
+#card-wrap{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+/*The actual cards*/
+.player-card{
+  margin:15px;
+  width:200px;
+  height:400px;
+  min-width:40vw;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
+}
+.player-card .card-header{
+
+}
+.player-card .card-body{
+
+}
+.player-card .card-footer{
+  padding:0px;
+}
+
+.statusSelect{
+  border:0px;
+  padding-left:20px;
+}
