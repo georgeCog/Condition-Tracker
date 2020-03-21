@@ -53,7 +53,7 @@
   display: block;
 }
 .drop-content button:hover{
-  color:var(--mu-dark-text);
+  color:var(--mu-medium-text);
 }
 .dropdown:hover .drop-content {
   display: block;
