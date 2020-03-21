@@ -29,6 +29,7 @@ body{
 /*Global classes*/
 .title{
   font-family: berlinSansBold;
+  color: var(--mu-primary);
 }
 
 .hidden{
@@ -41,4 +42,9 @@ body{
 }
 .dialog-btn:hover{
   background-color:var(--mu-secondary);
+}
+
+.input-group-text{
+  background-color:var(--mu-primary);
+  color :var(--mu-light-text);
 }

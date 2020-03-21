@@ -73,3 +73,12 @@ function removeCard(card){
   $("#delete-confirm-button").click(function(){card.remove();});
   $("#delete-chceck-toggle").click();
 }
+
+function getName(){
+  $("#create-player-toggle").click();
+}
+
+function addCard(){
+  var name = $("#create-player-name").val();
+  addPlayerCard(name);
+}
