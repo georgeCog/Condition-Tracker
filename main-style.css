@@ -1,0 +1,31 @@
+/*Set color pallet*/
+:root{
+  /*Background colors*/
+  --bg-color: lightgrey;
+  /*menu colors*/
+  --mu-primary : darkslategray;
+  --mu-secondary: lightslategray;
+  --mu-light-text: gainsboro;
+  --mu-dark-text: dimgray	;
+}
+
+/*Add fonts*/
+@font-face {
+  font-family: berlinSansBold;
+  src: url(Resources/Fonts/BRLNSB.TTF);
+}
+
+@font-face {
+  font-family: berlinSans;
+  src: url(Resources/Fonts/BRLNSR.TTF);
+}
+
+/*Set Main background*/
+body{
+  background-color: var(--bg-color);
+}
+
+/*Global classes*/
+.title{
+  font-family: berlinSansBold;
+}
