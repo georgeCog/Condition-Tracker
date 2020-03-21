@@ -77,6 +77,7 @@ function removeCard(card){
 }
 
 function getName(){
+  $("#create-player-name").val("");
   $("#create-player-toggle").click();
 }
 
