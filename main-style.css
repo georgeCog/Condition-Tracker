@@ -16,6 +16,7 @@
   /*menu colors*/
   --mu-primary : darkslategray;
   --mu-secondary: lightslategray;
+  --mu-tertiary: teal;
   --mu-light-text: white;
   --mu-dark-text: cadetblue	;
 }
@@ -47,4 +48,19 @@ body{
 .input-group-text{
   background-color:var(--mu-primary);
   color :var(--mu-light-text);
+}
+
+/*Big checkbox classes*/
+.big-checkbox{
+  margin-bottom:5px;
+}
+.big-checkbox input{
+  width: 25px;
+  height: 25px;
+}
+.big-checkbox label{
+  padding-left:10px;
+  padding-top:5px;
+  padding-bottom: 0px;
+  margin:0px;
 }

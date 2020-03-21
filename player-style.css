@@ -19,9 +19,25 @@
 }
 .player-card .card-body{
   height:300px;
+  overflow:auto;
+}
+.status-element{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
 }
 .player-card .card-footer{
+  display:flex;
   padding:0px;
+}
+.player-card .card-footer button{
+  width:50px;
+  background-color:var(--mu-primary);
+  color :var(--mu-light-text);
+  white-space:nowrap;
+}
+.player-card .card-footer button:hover{
+  background-color:var(--mu-tertiary);
 }
 
 @media only screen and (max-width: 680px) {
