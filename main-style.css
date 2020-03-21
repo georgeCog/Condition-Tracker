@@ -16,8 +16,8 @@
   /*menu colors*/
   --mu-primary : darkslategray;
   --mu-secondary: lightslategray;
-  --mu-light-text: gainsboro;
-  --mu-dark-text: dimgray	;
+  --mu-light-text: white;
+  --mu-dark-text: cadetblue	;
 }
 
 /*Set global aspects*/
@@ -33,4 +33,12 @@ body{
 
 .hidden{
   display:none;
+}
+
+.dialog-btn{
+  background-color:var(--mu-primary);
+  color :var(--mu-light-text);
+}
+.dialog-btn:hover{
+  background-color:var(--mu-secondary);
 }

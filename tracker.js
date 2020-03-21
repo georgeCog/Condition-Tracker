@@ -70,6 +70,6 @@ function fillStatusSelect(selectBox){
 function removeCard(card){
   var name = card.find(".player-name").text();
   $("#player-delete-name").text(name);
+  $("#delete-confirm-button").click(function(){card.remove();});
   $("#delete-chceck-toggle").click();
-  //card.remove();
 }
