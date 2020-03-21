@@ -5,24 +5,42 @@
 #card-wrap{
   display:flex;
   flex-wrap: wrap;
+  justify-content:flex-start;
 }
 
 /*The actual cards*/
 .player-card{
   margin:15px;
-  width:200px;
-  height:400px;
-  min-width:40vw;
+  width:300px;
   box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
 }
 .player-card .card-header{
 
 }
 .player-card .card-body{
-
+  height:300px;
 }
 .player-card .card-footer{
   padding:0px;
+}
+
+@media only screen and (max-width: 680px) {
+  .player-card{
+    margin:10px;
+    width:45%;
+  }
+  .player-card .card-body{
+    height:250px;
+  }
+  #card-wrap{
+    justify-content:space-around;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .player-card{
+    margin:5px;
+    width:90vw;
+  }
 }
 
 .statusSelect{

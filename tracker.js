@@ -9,6 +9,8 @@ function load(){
   cardWrapper = $("#card-wrap");
   addPlayerCard("Billy");
   addPlayerCard("Anna");
+  addPlayerCard("Trevor");
+  addPlayerCard("Mary");
 }
 
 //Add player card with specified atributes to page

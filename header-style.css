@@ -58,8 +58,3 @@
 .dropdown:hover .drop-content {
   display: block;
 }
-
-/*Any changes for mobile*/
-@media only screen and (max-width: 600px) {
-
-}
