@@ -1,6 +1,6 @@
 # Condition Tracker
 
-Condition trainer is a simple webapp for keeping track of player statuses in tabletop roleplaying games such as Pathfinder and D&D. It allows a user to create player cards with some player information on them. Status effects can then be added to the card to be toggled on or off.
+Condition Tracker is a simple webapp for keeping track of player statuses in tabletop roleplaying games such as Pathfinder and D&D. It allows a user to create player cards with some player information on them. Status effects can then be added to the card to be toggled on or off.
 
 ### Getting Started
 
