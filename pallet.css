@@ -1,0 +1,12 @@
+/*Set color pallet*/
+:root{
+  /*Background colors*/
+  --bg-color: lavender;
+  /*menu colors*/
+  --mu-primary : indigo;
+  --mu-secondary: blueviolet;
+  --mu-tertiary: mediumpurple;
+  --mu-light-text: white;
+  --mu-medium-text:plum;
+  --mu-dark-text: indigo	;
+}
