@@ -12,14 +12,14 @@
 /*Set color pallet*/
 :root{
   /*Background colors*/
-  --bg-color: lightsteelblue;
+  --bg-color: lavender;
   /*menu colors*/
-  --mu-primary : midnightblue;
-  --mu-secondary: mediumslateblue;
-  --mu-tertiary: slateblue;
+  --mu-primary : indigo;
+  --mu-secondary: blueviolet;
+  --mu-tertiary: mediumpurple;
   --mu-light-text: white;
-  --mu-medium-text:royalblue;
-  --mu-dark-text: darkblue	;
+  --mu-medium-text:plum;
+  --mu-dark-text: indigo	;
 }
 
 /*Set global aspects*/

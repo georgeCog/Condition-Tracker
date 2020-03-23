@@ -18,6 +18,7 @@
 
 }
 .player-card .card-body{
+  background-color:var(--mu-tertiary);
   height:300px;
   overflow:auto;
 }
