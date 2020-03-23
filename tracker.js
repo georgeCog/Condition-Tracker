@@ -2,15 +2,35 @@
 var cardWrapper;
 
 const customString = "Custom";
-var statusEffects = [customString,"Blinded","Charmed","Deafened","Fatigued","Frightened","Grappled","Paralyzed","Poisoned","Prone","Restrained","Stunned","Unconscious"];
+const defStatusEffects = [customString,"Blinded","Charmed","Deafened","Fatigued","Frightened","Grappled","Paralyzed","Poisoned","Prone","Restrained","Stunned","Unconscious"];
+var statusEffects = defStatusEffects;
 
 //Function called when all dom elements loaded
 function load(){
   cardWrapper = $("#card-wrap");
-  //addPlayerCard("Billy");
-  //addPlayerCard("Anna");
-  //addPlayerCard("Trevor");
-  //addPlayerCard("Mary");
+  if(document.cookie == ""){
+    message("Cookies", "This app uses cookies to remember where you left off");
+    document.cookie = "accepted=true";
+  }else{
+    loadCookieState();
+  }
+}
+
+//Load a state from the cokie substring
+function loadCookieState(){
+  //status array
+  var json_str = getCookie('status-effects');
+  if(json_str != ""){
+    statusEffects = JSON.parse(json_str);
+    updateStatusSelect()
+    console.log(statusEffects);
+  }
+}
+
+//reset possible statusSelect
+function resetStats(){
+  statusEffects = defStatusEffects;
+  updateStatusSelect();
 }
 
 //Add player card with specified atributes to page
@@ -84,6 +104,10 @@ function updateStatusSelect(){
     $(selectBox).empty();
     fillStatusSelect($(selectBox));
   }
+  // update Cookies
+  var json_str = JSON.stringify(statusEffects);
+  console.log(json_str);
+  createCookie('status-effects', json_str);
 }
 
 //fill the given status select with the correct options
