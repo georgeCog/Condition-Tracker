@@ -4,7 +4,7 @@ Condition Tracker is a simple webapp for keeping track of player statuses in tab
 
 ### Getting Started
 
-Currently the entire app is exicuted client side, and does not use server reliant features such a cookies, so the index file simply needs to be run with a browser to open the app.
+To allow cookies to work  the file should be run as a virtual server for development for example using atom:atom-live-server plugin
 
 ### Prerequisites
 
