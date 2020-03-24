@@ -1,9 +1,13 @@
 
 var cardWrapper;
 
-const customString = "Custom";
-const defStatusEffects = [customString,"Blinded","Charmed","Deafened","Fatigued","Frightened","Grappled","Paralyzed","Poisoned","Prone","Restrained","Stunned","Unconscious"];
+const customStatString = "New Stat";
+const defStatusEffects = [customStatString,"Blinded","Charmed","Deafened","Fatigued","Frightened","Grappled","Paralyzed","Poisoned","Prone","Restrained","Stunned","Unconscious"];
 var statusEffects = defStatusEffects;
+
+const customCounterString = "New Stat";
+const defCounterEffects = [customCounterString,"Exhaustion"];
+var counterEffects = defCounterEffects;
 
 //Function called when all dom elements loaded
 function load(){
@@ -71,7 +75,7 @@ function makeClose(){
 }
 
 function addStatusElement(body,name){
-  if(name == customString){
+  if(name == customStatString){
     getNewStatus();
   }else{
     body.append(makeStatusElement(name));
